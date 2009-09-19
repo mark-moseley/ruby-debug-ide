@@ -2,10 +2,10 @@ module Debugger
 
   # Implements debugger "pause" command
   class PauseCommand < Command
-    self.allow_in_control = true
+    self.control = true
 
     def regexp
-      /^\s*pause\s*$/
+      /^\s*pause\s*(?:\s+(\S+))?\s*$/
     end
 
     def execute
@@ -13,17 +13,18 @@ module Debugger
         print_msg "Not implemented"
         return
       end
-      @state.context.pause
+      c = get_context(@match[1].to_i)
+      c.pause
     end
 
     class << self
       def help_command
-        %w[jump]
+        %w[pause]
       end
 
       def help(cmd)
         %{
-          pause\tpause a running thread
+          pause <nnn>\tpause a running thread
          }
      end
     end

@@ -2,7 +2,7 @@ module Debugger
 
   # Implements debugger "jump" command
   class JumpCommand < Command
-    self.allow_in_control = true
+    self.need_context = true
 
     def numeric?(object)
       true if Float(object) rescue false
