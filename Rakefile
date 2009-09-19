@@ -9,22 +9,22 @@ desc 'Default: run unit tests.'
 task :default => [:test]
 
 # ------- Default Package ----------
-RUBY_DEBUG_IDE_VERSION = "0.4.9"
+RUBY_DEBUG_IDE_VERSION = "0.4.11"
 
 FILES = FileList[
-  'CHANGES',
-  'ChangeLog',
-  'ChangeLog.archive',
+#  'CHANGES',
+#  'ChangeLog',
+#  'ChangeLog.archive',
   'MIT-LICENSE',
   'Rakefile',
   'bin/*',
   'lib/**/*',
-  'test/**/*',
+ # 'test/**/*',
   'ext/mkrf_conf.rb'
 ]
 
 ide_spec = Gem::Specification.new do |spec|
-  spec.name = "ruby-debug-ide"
+  spec.name = "ruby-debug-ide19"
 
   spec.homepage = "http://rubyforge.org/projects/debug-commons/"
   spec.summary = "IDE interface for ruby-debug."
