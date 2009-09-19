@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="640"
+   name=""
+   committed-date="2009-08-26T19:06:32.065891Z"
+   url="http://debug-commons.rubyforge.org/svn/ruby-debug-ide/trunk/lib/ruby-debug"
+   last-author="mkrauskopf"
+   kind="dir"
+   uuid="81809f3d-796b-46d8-ad85-64d9ccf65f30"
+   revision="643"/>
+<entry
+   committed-rev="640"
+   name="command.rb"
+   text-time="2009-09-19T01:43:27.000000Z"
+   committed-date="2009-08-26T19:06:32.065891Z"
+   checksum="b3c461ffe5dd94c0ac25722c5f2fe9e3"
+   last-author="mkrauskopf"
+   kind="file"
+   prop-time="2009-09-19T01:43:27.000000Z"/>
+<entry
+   name="commands"
+   kind="dir"/>
+<entry
+   committed-rev="481"
+   name="helper.rb"
+   text-time="2009-09-19T01:43:27.000000Z"
+   committed-date="2008-05-21T13:21:07.197971Z"
+   checksum="c4b04d293f292c1ace6d5ae6403501ca"
+   last-author="mkrauskopf"
+   kind="file"
+   prop-time="2009-09-19T01:43:27.000000Z"/>
+<entry
+   committed-rev="640"
+   name="processor.rb"
+   text-time="2009-09-19T01:43:27.000000Z"
+   committed-date="2009-08-26T19:06:32.065891Z"
+   checksum="0fbfd2b880e56157737b1f889d928679"
+   last-author="mkrauskopf"
+   kind="file"
+   prop-time="2009-09-19T01:43:27.000000Z"/>
+<entry
+   committed-rev="640"
+   name="event_processor.rb"
+   text-time="2009-09-19T01:43:27.000000Z"
+   committed-date="2009-08-26T19:06:32.065891Z"
+   checksum="fee6c002de85b836849c401e2c1338cf"
+   last-author="mkrauskopf"
+   kind="file"
+   prop-time="2009-09-19T01:43:27.000000Z"/>
+<entry
+   committed-rev="452"
+   name="interface.rb"
+   text-time="2009-09-19T01:43:27.000000Z"
+   committed-date="2008-05-08T12:17:52.519083Z"
+   checksum="9df87ce0f884d39712101dd4b4361310"
+   last-author="mkrauskopf"
+   kind="file"
+   prop-time="2009-09-19T01:43:27.000000Z"/>
+<entry
+   committed-rev="640"
+   name="xml_printer.rb"
+   text-time="2009-09-19T01:43:27.000000Z"
+   committed-date="2009-08-26T19:06:32.065891Z"
+   checksum="c6d79ed0bc87f585081dd61a1e1d6945"
+   last-author="mkrauskopf"
+   kind="file"
+   prop-time="2009-09-19T01:43:27.000000Z"/>
+<entry
+   committed-rev="452"
+   name="printers.rb"
+   text-time="2009-09-19T01:43:27.000000Z"
+   committed-date="2008-05-08T12:17:52.519083Z"
+   checksum="d2175e7d99ba11a529b1983db83b07e6"
+   last-author="mkrauskopf"
+   kind="file"
+   prop-time="2009-09-19T01:43:27.000000Z"/>
+</wc-entries>
