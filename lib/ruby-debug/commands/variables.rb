@@ -34,7 +34,9 @@ module Debugger
     end
     
     def execute
-      if RUBY_VERSION > "1.9"
+      if RUBY_VERSION < "1.9"
+        globals = global_variables
+      else
         begin
           if RUBY_PLATFORM =~ /(win32|mingw32)/
             $stderr = File.open('NUL', 'w')
