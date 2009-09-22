@@ -34,19 +34,11 @@ module Debugger
     end
     
     def execute
+      globals = []
       if RUBY_VERSION < "1.9"
         globals = global_variables
       else
-        begin
-          if RUBY_PLATFORM =~ /(win32|mingw32)/
-            $stderr = File.open('NUL', 'w')
-          else
-            $stderr = File.open('/dev/null', 'w')
-          end
-          globals = global_variables - [:$KCODE, :$=]
-        ensure
-          $stderr = STDERR
-        end
+        Debugger::without_stderr { globals = global_variables - [:$KCODE, :$=] }
       end
       print_variables(globals, 'global') do |var|
         debug_eval(var)
