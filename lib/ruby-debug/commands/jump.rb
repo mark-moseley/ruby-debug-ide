@@ -18,7 +18,7 @@ module Debugger
     end
 
     def execute
-      if RUBY_VERSION < "1.9"
+      unless @state.context.respond_to?(:jump)
         print_msg "Not implemented"
         return
       end

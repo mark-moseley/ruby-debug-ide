@@ -9,11 +9,11 @@ module Debugger
     end
 
     def execute
-      if RUBY_VERSION < "1.9"
+      c = get_context(@match[1].to_i)
+      unless c.respond_to?(:pause)
         print_msg "Not implemented"
         return
       end
-      c = get_context(@match[1].to_i)
       c.pause
     end
 

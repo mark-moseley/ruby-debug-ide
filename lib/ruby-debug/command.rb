@@ -102,8 +102,8 @@ module Debugger
     # in ruby-debug.c
     def timeout(sec)
       return yield if sec == nil or sec.zero?
-      if RUBY_VERSION < "1.9"
-        raise ThreadError, "timeout within critical session" if Thread.critical
+      if Thread.respond_to?(:critical) and Thread.critical
+        raise ThreadError, "timeout within critical session"
       end
       begin
         x = Thread.current
