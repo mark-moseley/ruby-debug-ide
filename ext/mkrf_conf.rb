@@ -14,7 +14,7 @@ unless jruby
     if RUBY_VERSION < "1.9"
       inst.install "ruby-debug-base", "~> 0.10.3"
     else
-      inst.install "ruby-debug-base19", "~> 0.11.15" 
+      inst.install "ruby-debug-base19", "~> 0.11.24"
     end
     rescue
       exit(1)
