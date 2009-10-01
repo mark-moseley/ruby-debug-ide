@@ -9,7 +9,7 @@ desc 'Default: run unit tests.'
 task :default => [:test]
 
 # ------- Default Package ----------
-RUBY_DEBUG_IDE_VERSION = "0.4.12"
+RUBY_DEBUG_IDE_VERSION = "0.4.13"
 
 FILES = FileList[
 #  'CHANGES',
@@ -40,7 +40,7 @@ EOF
   spec.bindir = "bin"
   spec.executables = ["rdebug-ide"]
   spec.files = FILES.to_a
-  spec.add_dependency("ruby-debug-base19", "~> 0.11.20")
+  spec.add_dependency("ruby-debug-base19", "~> 0.12.0")
 
   spec.required_ruby_version = '>= 1.8.2'
   spec.date = DateTime.now
