@@ -25,7 +25,7 @@ FILES = FileList[
 ide_spec = Gem::Specification.new do |spec|
   spec.name = "ruby-debug-ide19"
 
-  spec.homepage = "http://rubyforge.org/projects/debug-commons/"
+  spec.homepage = "http://rubyforge.org/projects/ruby-debug19"
   spec.summary = "IDE interface for ruby-debug."
   spec.description = <<-EOF
 An interface which glues ruby-debug to IDEs like Eclipse (RDT) and NetBeans.
@@ -33,8 +33,8 @@ EOF
 
   spec.version = RUBY_DEBUG_IDE_VERSION
 
-  spec.author = "Markus Barchfeld, Martin Krauskopf"
-  spec.email = "rubyeclipse-dev-list@sourceforge.net"
+  spec.author = "Markus Barchfeld, Martin Krauskopf, Mark Moseley"
+  spec.email = "mark@fast-software.com"
   spec.platform = Gem::Platform::RUBY
   spec.require_path = "lib"
   spec.bindir = "bin"
