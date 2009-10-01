@@ -102,6 +102,7 @@ module Debugger
     end
 
     def start_server(host = nil, port = 1234)
+      return if started?
       start
       start_control(host, port)
     end
@@ -134,6 +135,7 @@ module Debugger
     end
     
     def start_control(host, port)
+      raise "Debugger is not started" unless started?
       return if @control_thread
       @control_thread = DebugThread.new do
         begin

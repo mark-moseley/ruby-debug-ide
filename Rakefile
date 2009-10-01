@@ -18,9 +18,8 @@ FILES = FileList[
   'MIT-LICENSE',
   'Rakefile',
   'bin/*',
-  'lib/**/*',
- # 'test/**/*',
-  'ext/mkrf_conf.rb'
+  'lib/**/*'
+ # 'test/**/*'
 ]
 
 ide_spec = Gem::Specification.new do |spec|
@@ -41,8 +40,7 @@ EOF
   spec.bindir = "bin"
   spec.executables = ["rdebug-ide"]
   spec.files = FILES.to_a
-  spec.extensions << "ext/mkrf_conf.rb"
-  spec.add_dependency("rake", ">= 0.8.1")
+  spec.add_dependency("ruby-debug-base19", "~> 0.11.20")
 
   spec.required_ruby_version = '>= 1.8.2'
   spec.date = DateTime.now
