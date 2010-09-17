@@ -76,7 +76,7 @@ end
 
 # save script name
 script = ARGV.shift
-Debugger::PROG_SCRIPT = (script == 'script/rails' ? Dir.pwd + '/' : '') + script
+Debugger::PROG_SCRIPT = (script =~ /script([\\\/])rails/ ? Dir.pwd + $1 : '') + script
   
 # install interruption handler
 trap('INT') { Debugger.interrupt_last }
