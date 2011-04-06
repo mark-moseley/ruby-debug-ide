@@ -119,7 +119,8 @@ module Debugger
         @proceed.wait(@mutex)
       end
       
-      bt = debug_load(Debugger::PROG_SCRIPT, options.stop, options.load_mode)
+      abs_prog_script = File.absolute_path(Debugger::PROG_SCRIPT)
+      bt = debug_load(abs_prog_script, options.stop, options.load_mode)
       if bt
         $stderr.print bt.backtrace.map{|l| "\t#{l}"}.join("\n"), "\n"
         $stderr.print "Uncaught exception: #{bt}\n"
